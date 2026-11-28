@@ -1,0 +1,277 @@
+<div class="manual">
+<h1>Manual do Fiscaliza360</h1>
+<p class="note">Programa de fiscalização de dinheiro público da Bahia: municípios, Governo do Estado e União. Tudo vem de bases públicas e oficiais. O que o programa aponta são <b>indícios para verificar</b>, nunca conclusões.</p>
+
+<nav class="mtoc" id="mtoc"></nav>
+
+<h2 id="m-inicio">1. Primeiros passos</h2>
+<h3>Abrir o programa</h3>
+<ul>
+<li>Dois cliques em <b>ABRIR FISCALIZA360</b>. A janela abre na hora com a tela “Carregando informações” e troca para o painel quando o programa fica pronto (poucos segundos).</li>
+<li><b>Senha:</b> é pedida a cada abertura, em todos os computadores, Macs e celulares. A senha é a mesma em todos. Para trocar, use <i>App do celular e senha</i> (só no computador principal).</li>
+<li>Os outros computadores com o programa instalado recebem as atualizações sozinhos.</li>
+</ul>
+<h3>Atualização dos dados (3 vezes por dia)</h3>
+<ul>
+<li>O programa atualiza tudo às <b>7 h, 13 h e 19 h</b>: Governo da Bahia, União (cota parlamentar, emendas Pix, contratos e obras federais) e municípios. Faz isso <b>mesmo com a janela fechada</b>, porque fica agendado no Windows. Se o computador estiver em suspensão, ele acorda para atualizar. Se estiver desligado, atualiza assim que for ligado.</li>
+<li>Entre um turno e outro há atualizações rápidas (Assembleia, Tesouro e alertas) a cada 2 horas.</li>
+<li>No canto superior direito aparece “Atualizado há…”. O botão <b>Atualizar</b> força uma atualização na hora.</li>
+<li>Os horários podem ser trocados no arquivo <i>dados/config.json</i> (campo “horarios_atualizacao”).</li>
+</ul>
+<h3>Celular (Android e iPhone)</h3>
+<ul>
+<li>Abra o endereço do app no celular e adicione à tela inicial. A senha é a mesma do computador.</li>
+<li>O app se atualiza sozinho. Quase tudo funciona com o computador desligado. O que precisa do computador ligado (pesquisas ao vivo, IA, atualizar dados) mostra um aviso pedindo para ligá-lo.</li>
+</ul>
+<h3>Navegação</h3>
+<ul>
+<li>Menu azul à esquerda: as grandes áreas (Municípios, Governo da Bahia, União, Eleições, Mapa, Meu trabalho e ferramentas). Em cima: as abas de cada área.</li>
+<li>Busca no topo (Ctrl+K): empresa, CNPJ, município, político ou qualquer palavra.</li>
+<li>Botão <b>Perguntar à IA</b> (pode ser arrastado para qualquer canto).</li>
+<li>Quase toda tela tem <b>Baixar PDF</b>, com o que está sendo mostrado.</li>
+</ul>
+
+<h2 id="m-alertas">2. Como ler um alerta</h2>
+<ul>
+<li><b>Grave</b> (vermelho) ou <b>atenção</b> (laranja). <b>NOVO</b> marca o que apareceu desde a sua última visita. <b>ANTERIOR</b> é o que saiu da lista mais recente, mas continua disponível para consulta.</li>
+<li>Filtros da lista:
+<ul>
+<li>texto e “só novos”;</li>
+<li>atuais e anteriores;</li>
+<li>gravidade (só graves ou só atenção);</li>
+<li><b>Alvo</b>: só o Governo (Executivo) ou só deputados e emendas;</li>
+<li><b>Partido</b>: só PT, PT e esquerda, outros partidos ou um partido específico;</li>
+<li>categorias, podendo marcar várias (nenhuma marcada = todas).</li>
+</ul></li>
+<li>No Estado, o filtro de partido considera os políticos citados no alerta (candidatos que receberam doação, deputados das emendas, políticos sócios de fornecedores). O Governo do Estado é do PT: para ver só o Executivo, use <i>Alvo → Só o Governo</i>.</li>
+<li>Ao clicar, abre o dossiê do alerta:
+<ul>
+<li><b>Por que é alerta</b>: as provas ponto a ponto, com tabelas.</li>
+<li><b>O que o programa conferiu</b>: as explicações legais possíveis e se os dados as confirmam ou descartam, com a <b>probabilidade de irregularidade</b> (alta, média ou baixa).</li>
+<li><b>O que essa situação pode causar</b> e <b>Possíveis irregularidades reais</b>, com a lei, a gravidade e a consequência de cada uma.</li>
+<li><b>O que conferir</b>, <b>pedidos de LAI</b> prontos e <b>a quem recorrer</b> (MP, TCE, TCM, CGU, MPF/PGR, Câmara/Senado), com o texto da representação.</li>
+</ul></li>
+<li>Botões do alerta:
+<ul>
+<li><b>Aprofundar com pesquisa na internet (IA)</b>: a IA lê as provas, pesquisa e diz se a suspeita se sustenta. Custa cerca de US$ 0,40 dos seus créditos.</li>
+<li><b>Baixar dossiê (PDF)</b>.</li>
+<li><b>Vigiar esta empresa</b>.</li>
+<li><b>Registrar pedido ou denúncia enviado</b>.</li>
+<li><b>Registrar resultado</b>.</li>
+</ul></li>
+</ul>
+
+<h2 id="m-pautas">3. Radar de Pautas</h2>
+<ul>
+<li>Assuntos com potencial de notícia, ordenados por relevância.</li>
+<li>Filtros:
+<ul>
+<li>gravidade;</li>
+<li>tema;</li>
+<li>atuais ou anteriores;</li>
+<li><b>partido</b> (só PT, PT e esquerda…);</li>
+<li>município de interesse.</li>
+</ul></li>
+<li>Cada pauta traz manchete, lead, números, por que importa, o que diz a lei, perguntas, quem procurar e fontes.</li>
+<li><b>Conteúdo pronto</b>: roteiro de vídeo, matéria, post, pedido de posicionamento e dossiê.</li>
+<li><b>Meu trabalho com esta pauta</b>:
+<ul>
+<li>escolha o andamento (ideia, apurando, a gravar, gravada, publicada);</li>
+<li>marque o <b>checklist antes de publicar</b>;</li>
+<li>registre o pedido de posicionamento enviado;</li>
+<li>cole o link do que foi publicado.</li>
+</ul></li>
+<li><b>Enviar à imprensa</b>: monta o release com a sua assinatura. Você escolhe os jornalistas, e o programa abre o seu e-mail com eles em cópia oculta e registra o envio. O envio é sempre feito por você.</li>
+<li><b>Cards para redes sociais</b>: gera imagens prontas para o feed do Instagram (1080×1350), para Reels e Stories (1080×1920) e no formato quadrado. Você pode editar o título, o número em destaque, a cor e a assinatura.</li>
+</ul>
+
+<h2 id="m-municipios">4. Municípios</h2>
+<ul>
+<li><b>Meus municípios</b>: adicione qualquer município da Bahia escolhendo os anos e se quer a Câmara, a Prefeitura ou as duas. O programa coleta tudo sozinho. Fixe no menu os que você acompanha.</li>
+<li>Em cada Câmara ou Prefeitura:
+<ul>
+<li>Alertas, com filtro de gravidade e de categoria;</li>
+<li>Radar de Pautas, com filtro de gravidade;</li>
+<li>Busca geral e Pesquisa ao vivo (Diário Oficial, PNCP, e-TCM);</li>
+<li>Servidores, Contracheques destrinchados e Folha mês a mês;</li>
+<li>Pagamentos e Por credor;</li>
+<li>Contratos e licitações (PNCP);</li>
+<li>Gestão fiscal, Atos do Executivo, TCM-BA, Documentos enviados, Vereadores e Emendas.</li>
+</ul></li>
+<li><b>Balancete: gasto mês a mês</b>: empenhado, liquidado, pago e saldo em caixa, com Excel e PDF.</li>
+<li><b>Estado e União neste município</b>: o que o Governo da Bahia e a União mandaram para lá.</li>
+</ul>
+
+<h2 id="m-estado">5. Governo da Bahia</h2>
+<ul>
+<li><b>Alertas</b>, que cobrem:
+<ul>
+<li>pagamento depois do fim do contrato;</li>
+<li>aditivos acima de 25%;</li>
+<li>contrato sem fiscal;</li>
+<li>fracionamento de despesa;</li>
+<li>licitação com um só participante;</li>
+<li>licitantes ligados na mesma licitação;</li>
+<li>empresa punida, baixada ou recém-aberta recebendo;</li>
+<li>dívida ativa na União;</li>
+<li>doadores e fornecedores de campanha;</li>
+<li>diárias, convênios, emendas, empréstimos e tramitação acelerada.</li>
+</ul></li>
+<li><b>Radar de Pautas</b>, com filtro de partido.</li>
+<li><b>Proposições</b> da ALBA e <b>Busca geral</b>.</li>
+<li><b>Balancete do Legislativo</b>: ALBA, TCE e TCM, mês a mês.</li>
+<li><b>Balancete do Executivo</b> (novo): o Governo do Estado inteiro (com a secretaria em cada linha) ou cada uma das 32 secretarias e órgãos, mês a mês.</li>
+<li><b>Comparar preços</b> (novo): digite um item (papel A4, notebook, diesel…) e veja o preço pago por cada órgão. Compras por 2 vezes a mediana ou mais aparecem em vermelho, com o valor pago a mais.</li>
+<li><b>Emendas por deputado</b>, <b>Para onde foram as emendas</b> e <b>Emendas</b>.</li>
+<li>Pagamentos, Empenhos, Credores, Órgãos, Contratos, Licitações, Convênios, Diárias e Projetos.</li>
+<li>Empréstimos, Orçamento, Receitas e Gestão fiscal.</li>
+</ul>
+
+<h2 id="m-uniao">6. União</h2>
+<ul>
+<li>Foco nos parlamentares do <b>PT e da esquerda de todo o Brasil</b> (PT, PSOL, PCdoB, PV, REDE, PSB, PDT), mais a bancada da Bahia de todos os partidos. A lista de partidos pode ser trocada em <i>dados/config.json</i> (“uniao_foco” e “uniao_esquerda”).</li>
+<li><b>Alertas</b>, sobre os parlamentares:
+<ul>
+<li>cota paga a empresa punida, baixada ou recém-aberta;</li>
+<li>fornecedor da campanha pago com a cota;</li>
+<li>fornecedor que concentra a cota;</li>
+<li>gasto acima do padrão da Casa;</li>
+<li>fornecedor da cota que também recebe do Estado.</li>
+</ul></li>
+<li><b>Alertas</b>, sobre o Governo Federal (Executivo):
+<ul>
+<li>contrato federal assinado com empresa punida;</li>
+<li>obra federal paralisada ou atrasada na Bahia.</li>
+</ul></li>
+<li>Filtros dos alertas: alvo, partido e UF. PT e esquerda aparecem antes dos demais, e dentro desse grupo vem primeiro o indício mais grave.</li>
+<li><b>Radar de Pautas</b>: bancada do PT e da esquerda comparada com a média da Casa, casos graves, obras federais paradas e a bancada baiana.</li>
+<li><b>Relatório por partido</b>: todos os parlamentares do PT (ou da esquerda, de um partido ou de uma UF), com:
+<ul>
+<li>gasto da cota e quanto representa da média;</li>
+<li>posição no ranking da Casa;</li>
+<li>alertas por tipo e maiores fornecedores;</li>
+<li>emendas Pix e principais destinos;</li>
+<li>PDF completo;</li>
+<li>botão “Pesquisar denúncias” por parlamentar (IA na internet, cerca de US$ 0,40).</li>
+</ul></li>
+<li><b>Deputados federais</b> e <b>Senadores</b>: filtro de grupo, partido e UF, gasto em relação à média, notas fiscais e fornecedores.</li>
+<li><b>Emendas Pix</b>.</li>
+<li><b>Governo Federal: contratos e obras</b> (novo): obras com dinheiro federal na Bahia e contratos dos órgãos federais.</li>
+<li>Proposições (Câmara e Senado).</li>
+<li><b>Balancete do Legislativo</b>: Câmara, Senado e TCU.</li>
+<li><b>Balancete do Executivo</b> (novo): Governo Federal mês a mês, por função (saúde, educação…). A União publica com cerca de 3 meses de atraso.</li>
+</ul>
+
+<h2 id="m-eleicoes">7. Eleições</h2>
+<ul>
+<li>Busque qualquer político e veja todas as eleições que ele disputou, votos por município e por bairro e locais de votação.</li>
+<li><b>Comparar eleições</b> mostra onde cresceu e onde caiu, e gera o relatório de pontos a melhorar em PDF.</li>
+<li>Abas de eleições municipais, estaduais e federais, de 2016 a 2026.</li>
+</ul>
+
+<h2 id="m-mapa">8. Mapa da Bahia (novo)</h2>
+<ul>
+<li>Os 417 municípios pintados por um indicador:
+<ul>
+<li>emendas estaduais;</li>
+<li>convênios do Estado (valor pago e inadimplentes);</li>
+<li>emendas Pix federais;</li>
+<li>obras federais paradas;</li>
+<li>alertas municipais.</li>
+</ul></li>
+<li>Passe o mouse para ver o número e clique para ver tudo sobre o município.</li>
+<li>Exporta a <b>imagem do mapa (PNG)</b>, para usar em vídeo, e o ranking em PDF.</li>
+</ul>
+
+<h2 id="m-trabalho">9. Meu trabalho (novo)</h2>
+<h3>Vigilância</h3>
+<ul>
+<li>Cadastre CNPJs, CPFs, nomes ou assuntos (ex.: “merenda”, “Construtora X”, nome de um secretário).</li>
+<li>O programa confere sozinho a cada 3 horas e depois de cada atualização. Ele olha:
+<ul>
+<li>pagamentos, contratos, licitações, convênios e emendas do Estado;</li>
+<li>cota parlamentar;</li>
+<li>prefeituras e câmaras coletadas;</li>
+<li>alertas;</li>
+<li>Diário Oficial e PNCP de Lauro de Freitas.</li>
+</ul></li>
+<li>O que aparecer pela primeira vez vem marcado como <b>NOVO</b>, e o menu mostra um número.</li>
+</ul>
+<h3>Pedidos e denúncias</h3>
+<ul>
+<li>Registre pedidos de LAI, representações, ofícios e pedidos de posicionamento.</li>
+<li>O programa conta o prazo legal (LAI: 20 dias, mais 10 de prorrogação) e avisa quando está para vencer ou venceu.</li>
+<li>Pedido vencido gera a pauta “órgão ignora pedido de informação há X dias”, com o texto pronto para copiar.</li>
+</ul>
+<h3>Quadro de pautas</h3>
+<ul>
+<li>As pautas que você está trabalhando, por andamento: ideia, apurando, a gravar, gravada, publicada.</li>
+<li>Cada pauta mostra o checklist cumprido e se já foi enviada à imprensa.</li>
+<li><b>+ Nova pauta</b>: crie uma pauta sua direto no quadro, sem precisar vir do Radar de Pautas.</li>
+<li>Abra a pauta para enviar arquivos classificados (roteiro, matéria, prova ou documento oficial, documento de apoio, imagem/áudio/vídeo, resposta dos citados, outro) e acompanhar a produção: etapa, quem está editando, formato, prazo e o que falta. O mesmo vale para as pautas do Radar, no bloco “Meu trabalho com esta pauta”.</li>
+</ul>
+<h3>Produção de vídeos</h3>
+<ul>
+<li>Cada vídeo em colunas pela etapa: não iniciada, roteiro em escrita, roteiro pronto, em gravação, em edição, matéria em redação, concluída. Prazo vencido aparece em vermelho.</li>
+<li><b>+ Novo vídeo</b> cria o vídeo; abra-o para enviar o roteiro, as provas e as mídias (vídeos de até 4 GB).</li>
+<li><b>Pacote para o editor (ZIP)</b>: junta todos os arquivos em pastas (Roteiro, Matéria, Provas, Apoio, Mídia…) com uma folha LEIA-ME com o que é o vídeo, o que falta, as anotações e os cuidados na edição.</li>
+<li>Os arquivos ficam só neste computador (pasta dados/meu_trabalho).</li>
+</ul>
+<h3>Imprensa</h3>
+<ul>
+<li>Seus contatos de jornalistas e veículos, que ficam só no seu computador.</li>
+<li>A assinatura dos releases (nome, cargo, telefone, redes).</li>
+<li>O histórico de envios, com planilha e PDF.</li>
+</ul>
+<h3>Resultados</h3>
+<ul>
+<li>O que mudou por causa do seu trabalho: contrato suspenso, dinheiro devolvido, investigação aberta, obra retomada.</li>
+<li>Gera o PDF de <b>Prestação de contas do mandato</b>.</li>
+</ul>
+
+<h2 id="m-ferramentas">10. Outras ferramentas</h2>
+<ul>
+<li><b>Notícias em alta</b> (novo): os assuntos mais noticiados agora (Google Notícias, últimos 2 dias), agrupados e ordenados por relevância, e os mais buscados no Brasil (Google Trends).
+<ul>
+<li><b>Foco</b> (já vem marcado): denúncias e assuntos desfavoráveis à esquerda, aos governos de esquerda (Lula, Jerônimo), a parlamentares e partidos de esquerda (PT, PSOL, PCdoB) e ao STF. A marcação é automática, por palavras: confira o teor de cada matéria antes de usar.</li>
+<li>Filtros: só o foco, denúncias de qualquer lado ou todos; por tema; busca por palavra. “Atualizar agora” busca de novo (a lista se renova sozinha a cada 30 minutos).</li>
+<li>Ao abrir um assunto: todas as matérias com link, o que o programa tem sobre os nomes citados (pagamentos, empenhos, empresas, alertas), <b>Aprofundar com pesquisa na internet</b> (a IA lê as matérias e documentos e separa fato, indício e opinião), dossiê em PDF, roteiros, matéria, pedido de posicionamento e post, e os botões “Levar ao Quadro de pautas” e “Vigiar o assunto”.</li>
+</ul></li>
+<li><b>Impostômetro</b>: arrecadação da União, do Estado e dos municípios (Tesouro).</li>
+<li><b>Ficha da empresa</b>: digite o CNPJ e veja:
+<ul>
+<li>Receita Federal e sócios;</li>
+<li>certidões do TCU, CNJ e CGU (as do TCU completam sozinhas em alguns segundos);</li>
+<li>o que recebeu do Estado e dos municípios;</li>
+<li>dívida ativa, punições, ligações e índice de risco.</li>
+</ul></li>
+<li><b>Verificar proposição</b>: confere se um projeto já existe ou é parecido com outro da ALBA.</li>
+<li><b>Meus documentos</b>: guarde documentos. O programa os relaciona com alertas, empresas e pautas.</li>
+<li><b>App do celular e senha</b> (só no computador principal): endereço do app, troca de senha e ativação da IA.</li>
+</ul>
+
+<h2 id="m-ia">11. Inteligência artificial</h2>
+<ul>
+<li><b>Perguntar à IA</b>: perguntas sobre qualquer tela, leis ou dados. A IA pode pesquisar na internet.</li>
+<li>Usa os créditos da sua conta da Anthropic. Uma pergunta simples custa centavos. Uma análise aprofundada com pesquisa custa cerca de US$ 0,40.</li>
+<li>As análises do próprio programa (provas, verificações, probabilidade e explicações) são gratuitas e não usam a IA.</li>
+</ul>
+
+<h2 id="m-cuidados">12. Cuidados antes de publicar</h2>
+<ul>
+<li>Confira os números na fonte oficial (os links estão nos dossiês).</li>
+<li><b>Ouça o outro lado</b>: envie o pedido de posicionamento e dê prazo para a resposta.</li>
+<li>Use linguagem de indício (“suspeita”, “segundo os dados”) e não afirme crime.</li>
+<li>Não exponha dados pessoais desnecessários.</li>
+<li>Guarde cópia das provas (o PDF do dossiê serve para isso).</li>
+<li>Use o checklist de cada pauta.</li>
+</ul>
+
+<h2 id="m-duvidas">13. Dúvidas comuns</h2>
+<ul>
+<li><b>Cliquei e nada abriu.</b> O programa pode estar reiniciando para aplicar uma atualização. A tela tenta de novo sozinha por alguns segundos e mostra um aviso.</li>
+<li><b>“Atualizado há muitas horas”.</b> Confira se o computador estava ligado ou em suspensão. A atualização roda às 7 h, 13 h e 19 h, ou assim que o computador for ligado.</li>
+<li><b>O celular diz que o computador está desligado.</b> Ligue o computador principal (o programa abre sozinho no horário agendado ou ao iniciar o Windows).</li>
+<li><b>A análise da IA caiu no meio.</b> Ela tenta de novo sozinha até 4 vezes. Se persistir, clique em “Refazer a análise”.</li>
+</ul>
+</div>
